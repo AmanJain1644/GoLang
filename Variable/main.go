@@ -84,3 +84,4 @@ type MyStruct struct {
 func (m *MyStruct) PrintFirstName() string{
 	return m.FirstName
 } 
+
