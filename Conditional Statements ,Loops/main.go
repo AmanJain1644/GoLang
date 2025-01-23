@@ -24,4 +24,29 @@ func main() {
 	default:
 		log.Println("var is something else!!")
 	}
+
+	for i:=0; i<=10; i++{
+		log.Println(i);
+	}
+
+	mySLice := []string{"dog","cat","rohit","robin","billy","HomeLander"}
+
+	for i,x:= range mySLice{
+		log.Println(i,x);
+	}
+
+	for _,x:= range mySLice{
+		log.Println(x);
+	}
+
+	myMap:= make(map[string]string)
+	myMap["dog"]="dog"
+	myMap["cat"]="cat"
+	myMap["monkey"]="monkey"
+	myMap["sparrow"]="sparrow"
+
+	for x,y:= range myMap{
+		log.Println(x,y);
+	}
+
 }
