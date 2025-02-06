@@ -21,7 +21,7 @@ func addValues(x,y int)int{
 
 func main() {
 	http.HandleFunc("/",Home)
-	http.HandleFunc("/About",About)
+	http.HandleFunc("/about",About)
 
 	fmt.Println(fmt.Sprintf("Started listening on port %s",portNumber))
 	_ = http.ListenAndServe(portNumber,nil)
